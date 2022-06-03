@@ -1,0 +1,14 @@
+name: Docker Build Service
+
+on:
+  push:
+     branches: [ $default-branch ]
+  pull_request: 
+
+jobs:
+  build:
+    uses: fasttrack-solutions/ci/.github/workflows/docker-service.yml@main
+    with:
+      image: ${{github.repository}}
+      dockerfile: "./deployments/docker/Dockerfile"
+    secrets: inherit    
