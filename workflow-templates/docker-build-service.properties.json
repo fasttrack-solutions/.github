@@ -1,9 +1,4 @@
 {
   "name": "Docker build & push to ECR",
-  "description": "Used for docker build & push to ECR",
-  "iconName": "example-icon",
-  "categories": [
-      "Go",
-      "Javascript"
-  ]
+  "description": "Used for docker build & push to ECR"
 }
