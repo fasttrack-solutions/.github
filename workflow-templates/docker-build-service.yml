@@ -9,6 +9,6 @@ jobs:
   build:
     uses: fasttrack-solutions/ci/.github/workflows/docker-service.yml@main
     with:
-      image: ${{github.repository}}
+      image: ${{ github.event.repository.name }}
       dockerfile: "./deployments/docker/Dockerfile"
     secrets: inherit    
